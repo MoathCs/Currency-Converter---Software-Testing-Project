@@ -30,14 +30,14 @@ src/test/resources/testRealDB.properties
 Open a command prompt in the main directory of the project and run the following Maven command to start the Spring Boot application:
 ```bash
 #Run the application
-mvn spring-boot:run
+mvnw spring-boot:run
 ```
 
 4. Generate Surefire Report
 
 To generate the Surefire report, run the following Maven command:
 ```bash
-mvn surefire-report:report
+mvnw surefire-report:report
 ```
 
 Additional Notes
@@ -46,4 +46,8 @@ Additional Notes
     Ensure the PostgreSQL server is running before executing the commands.
     For more detailed configuration, refer to the application.properties file in the resources folder.
 
-
+# -----------------------------
+# This project is worked by:   | 
+# Moath Hussein                |
+# ID :1202862                  | 
+# ------------------------------

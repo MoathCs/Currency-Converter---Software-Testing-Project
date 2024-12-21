@@ -24,9 +24,9 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TestingWithDifferentCurrencyAmounts {
     private WebDriver webDriver;
-    private static ExtentReports extent;
-    private static ExtentSparkReporter spark;
-    private static ExtentTest test;
+    private static ExtentReports extent; // fill data in report
+    private static ExtentSparkReporter spark; // spark report page
+    private static ExtentTest test; //
 
     @BeforeAll
     static void beforeAll() {
@@ -67,7 +67,7 @@ public class TestingWithDifferentCurrencyAmounts {
         WebElement toCurrencyElement = webDriver.findElement(By.cssSelector("#to"));
         Select toSelect = new Select(toCurrencyElement);
         toSelect.selectByValue("USD");
-        test.info("Values are submited to be converted with no amount");
+        test.info("Values are Submited to be converted with no amount");
         //convert btn
         WebElement convertBtn = webDriver.findElement(By.cssSelector("#convertCurrency"));
         convertBtn.click();
